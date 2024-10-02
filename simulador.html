@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador - Bono Digital para Empresas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="simulador.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Simulador de Ayuda para el Bono Digital</h1>
+            <p>Selecciona el rango de empleados de tu empresa y descubre cuánto dinero puedes recibir y qué proyectos puedes realizar.</p>
+            <a href="home.html" class="button back-button">Volver a la página principal</a>
+        </div>
+    </header>
+
+    <section class="simulator-section">
+        <div class="container">
+            <h2>Selecciona el número de empleados</h2>
+            <form id="employeeForm">
+                <label for="employees">Número de empleados:</label>
+                <select id="employees" name="employees">
+                    <option value="1-2">1-2 empleados</option>
+                    <option value="3-9">3-9 empleados</option>
+                    <option value="10-49">10-49 empleados</option>
+                    <option value="50-99">50-99 empleados</option>
+                    <option value="100-249">100-249 empleados</option>
+                </select>
+                <button type="submit">Calcular ayuda</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="results-section" id="results">
+        <div class="container">
+            <h2>Resultados</h2>
+            <div id="resultText"></div>
+            
+            <!-- Recomendaciones separadas por Kit Digital y Kit Consulting -->
+            <h3>Recomendaciones de proyectos - Kit Digital</h3>
+            <ul id="kitDigitalRecommendations">
+                <!-- Las recomendaciones para Kit Digital aparecerán aquí -->
+            </ul>
+
+            <h3>Recomendaciones de proyectos - Kit Consulting</h3>
+            <ul id="kitConsultingRecommendations">
+                <!-- Las recomendaciones para Kit Consulting aparecerán aquí -->
+            </ul>
+            
+            <!-- Advertencia del Kit Consulting -->
+            <div id="kitConsultingWarning" class="warning">
+                <strong>Advertencia:</strong> El importe máximo que se destinará a cada uno de los servicios prestados en el Kit Consulting será de 6.000 €.
+            </div>
+
+            <!-- Botón para descargar los resultados -->
+            <button id="downloadResults" class="button" style="display: none;">Descargar resultados</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bono Digital para Empresas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

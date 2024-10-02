@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #221f1f; /* Color oscuro para el texto principal */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f5841f; /* Color principal para el encabezado */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #f5841f; /* Color principal para los títulos */
+}
+
+ul, table {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+ul li, table td, table th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #f5841f; /* Color de fondo de las cabeceras de las tablas */
+    color: #fff;
+    text-align: left;
+}
+
+footer {
+    background-color: #221f1f; /* Fondo oscuro para el pie de página */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.content-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.content-section h2, .aid-info h3, .requirements h3 {
+    color: #f5841f; /* Color de los títulos de las secciones */
+    margin-bottom: 20px;
+}
+
+.content-section ul, .requirements ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+.content-section p, .aid-info p, .requirements li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.aid-info, .requirements {
+    background-color: #fef4e4; /* Color suave de fondo para secciones informativas */
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Estilos para la página principal (Home) */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.button-box {
+    margin: 15px;
+}
+
+.button {
+    display: block;
+    background-color: #f5841f; /* Color principal para los botones */
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d77117; /* Un tono más oscuro del color principal */
+    transform: translateY(-5px);
+}
+
+/* Estilos para la página del simulador */
+.simulator-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.simulator-section h2 {
+    color: #f5841f; /* Título de la sección con color principal */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #f5841f; /* Botón con el color principal */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d77117; /* Tono oscuro para el hover */
+}
+
+.results-section {
+    background-color: #fef4e4; /* Fondo suave para la sección de resultados */
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.results-section h2 {
+    color: #f5841f; /* Título con color principal */
+}
+
+#resultText p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#recommendations {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+/* Estilo para la advertencia */
+.warning {
+    background-color: #fff3cd;
+    border-left: 5px solid #f0ad4e;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: #856404;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.warning strong {
+    font-weight: bold;
+}
+/* Estilo para el botón de regreso */
+.back-button {
+    display: inline-block;
+    background-color: #ffffff; /* Color de fondo para el botón */
+    color: #f0ad4e;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #d77117; /* Color más oscuro para el hover */
+    transform: translateY(-3px); /* Efecto de desplazamiento hacia arriba */
+}
