@@ -1,9 +1,11 @@
+/* Reset de márgenes y padding para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos básicos para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -11,32 +13,53 @@ body {
     line-height: 1.6;
 }
 
+/* Contenedor centralizado */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Estilos para el encabezado */
 header {
-    background-color: #f5841f; /* Color principal para el encabezado */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Esto separa la imagen del texto */
+    background-color: #f5841f; /* Color de fondo */
+    padding: 20px;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.logo {
+    flex: 0 0 auto; /* No permite que la imagen crezca o se encoja */
 }
 
-header p {
+.logo-img {
+    max-width: 120px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+.header-text {
+    text-align: center; /* Centra el texto */
+    color: #fff; /* Cambia el color del texto a blanco */
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
     font-size: 1.2rem;
 }
 
+/* Estilos para los títulos principales */
 h2 {
     margin-top: 30px;
     font-size: 1.8rem;
     color: #f5841f; /* Color principal para los títulos */
 }
 
+/* Estilos para listas y tablas */
 ul, table {
     margin-top: 15px;
     font-size: 1.1rem;
@@ -58,6 +81,7 @@ table th {
     text-align: left;
 }
 
+/* Estilos para el pie de página */
 footer {
     background-color: #221f1f; /* Fondo oscuro para el pie de página */
     color: #fff;
@@ -70,6 +94,7 @@ footer p {
     font-size: 1rem;
 }
 
+/* Estilos para las secciones de contenido */
 .content-section {
     background-color: #ffffff;
     padding: 40px 0;
@@ -197,6 +222,7 @@ button:hover {
 .warning strong {
     font-weight: bold;
 }
+
 /* Estilo para el botón de regreso */
 .back-button {
     display: inline-block;
